@@ -67,12 +67,12 @@ function Stopwatch() {
         <p data-testid="time" className="time">
           {`${time.hours.toString().padStart(2, "0")} : ${time.minutes.toString().padStart(2, "0")} : ${time.seconds.toString().padStart(2, "0")}`}
         </p>
-        <button onClick={handleButton1Click} data-testid="button" className="button">
+        <button onClick={handleButton1Click} data-testid="id" className="button">
           {button1State === "Start" && "Start"}
           {button1State === "Pause" && "Pause"}
           {button1State === "Resume" && "Resume"}
         </button>
-        <button onClick={handleButton2Click} disabled={button1State === "Start"} data-testid="button" className="button">
+        <button onClick={handleButton2Click} disabled={button1State === "Start"} data-testid="id" className="button">
           {button2State === "Reset" && "Reset"}
         </button>
       </p>
